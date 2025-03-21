@@ -135,7 +135,8 @@ http://<IP>/search.php?q=hello;whoami
 | `net user /domain` | Enumerate domain users |
 | `net group "Domain Admins" /domain` | List Domain Admins |
 | `nltest /dclist:<DOMAIN>` | Get list of domain controllers |
-| `SharpHound.exe -c All` | Collect AD data for BloodHound |
+| bloodhound-python -u $USER -p '$PASSWORD' -d $DOMAIN -dc $FQDN -c all -ns $DOMAINIP
+ | Collect AD data for BloodHound |
 
 ### 7.1 Credential Attacks
 
